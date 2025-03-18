@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>News Visualizer</h1>
+
+        <!-- Country Selector -->
+        <label for="countrySelect">Select Country:</label>
+        <select id="countrySelect">
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select>
+
+        <!-- Trending News -->
+        <div class="trending-news">
+            <h2>Trending:</h2>
+            <p id="trendingText"></p>
+        </div>
+
+        <!-- News Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" data-category="Sports">Sports</button>
+            <button class="tab-btn" data-category="Weather">Weather</button>
+            <button class="tab-btn" data-category="Politics">Politics</button>
+        </div>
+
+        <!-- News Content -->
+        <div id="newsContent"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
